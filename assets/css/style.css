@@ -1,0 +1,199 @@
+@import url('./reset.css');
+@import url('./global.css');
+
+/* header css start  */
+.header {
+    padding: 20px 0;
+}
+.logo {
+    color: #fff;
+    font-size: 28px;
+    font-family: var(--h-font);
+    font-weight: 700;
+}
+.main-menu li {
+    display: inline-block;
+}
+.main-menu li a {
+    color: #fff;
+    padding: 30px 10px;
+}
+.main-menu li a:hover {
+    color: var(--main-color);
+}
+/* header css end */
+
+/* hero-section css start  */
+.hero-section .content {
+    width: 40%;
+}
+.hero-section .image {
+    width: 60%;
+    box-shadow: 15px 15px 0 1px var(--main-color);
+}
+.hero-section .name {
+    font-size: 86px;
+}
+.hero-section .designation {
+    font-size: 22px;
+    color: var(--main-color);
+    position: relative;
+    padding-left: 35px;
+}
+.hero-section .designation::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 1px;
+    background-color: var(--main-color);
+}
+/* hero-section css end */
+
+
+/* service section start */
+.service-item {
+    background-color: #151515;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 #16c79aab;
+    transition: all 0.3s;
+}
+.service-item:hover {
+    box-shadow: 0 5px 25px 0 var(--main-color);
+}
+.service-item i {
+    font-size: 56px;
+}
+/* service section end */
+
+
+
+/* portfolio section css start */
+.portfolio-item .thumb {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+.portfolio-item .thumb .img-2 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-item:hover .thumb .img-1 {
+    opacity: 0;
+    visibility: hidden;
+}
+.portfolio-item:hover .thumb .img-2 {
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio-item img {
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.portfolio-item:hover img {
+    transform: scale(1.2)
+}
+.portfolio-item .content {
+    padding: 20px 30px;
+}
+/* portfolio section css end */
+
+
+
+/* skill section css start */
+.skill-item {
+    margin-bottom: 30px;
+}
+.skill-item .percentage {
+    margin-left: auto;
+}
+.progess-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #4a4a4a;
+    margin-top: 6px;
+    position: relative;
+}
+.progess-bar-inner {
+    position: absolute;
+    height: 100%;
+    background-color: var(--main-color);
+}
+/* skill section css end */
+
+
+/* testimonial section start */
+.testimonial-item {
+    padding: 30px;
+    border-radius: 5px;
+}
+.testimonial-item .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.testimonial-item .top .thumb {
+    width: 90px;
+    height: 90px;
+}
+.testimonial-item .top .content {
+    padding-left: 30px;
+}
+
+.testimonial-item {
+    width: 100%; 
+    border: 1px solid var(--main-color);   
+}
+.testimonial-item img {
+    border-radius: 50%;
+}
+/* testimonial section end */
+
+/* contact section css start */
+.form-control {
+    width: 100%;
+    height: 55px;
+    background-color: #000;
+    border: 1px solid #ffffff40;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    color: #fff;
+}
+.form-control::placeholder {
+    color: #ffffff80;
+}
+textarea.form-control {
+    height: 150px;
+}
+.map-wrapper {
+    padding: 15px;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 var(--main-color);
+}
+/* contact section css end */
+
+/* footer-section css start */
+.footer-section {
+    background-color: #000;
+    padding: 50px 0;
+}
+.social-link {
+    padding: 30px;
+    border: 1px solid #ffffff80;
+    display: block;
+}
+.social-link .caption {
+    font-size: 14px;
+}
+/* footer-section css end */

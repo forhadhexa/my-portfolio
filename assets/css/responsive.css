@@ -1,0 +1,19 @@
+/* 
+    Responsive types 
+    1) Desktop based - max-width
+    2) Mobile based - min-width
+*/
+
+@media (max-width: 1400px) {
+    .hero-section .name {
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section .content,
+    .hero-section .image {
+        width: 100%;
+        padding: 15px;
+    }
+}
